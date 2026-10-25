@@ -9,16 +9,16 @@ This is the dedicated, standalone ERP system for **Iron Prairie Group LLC (IPG)*
 
 - **Parent Host Workspace Location**: `C:\Users\micha\Desktop\Iron-Prairie-Website`
 - **Subfolder Workspace Location**: `C:\Users\micha\Desktop\Iron-Prairie-Website\IPG-Custom-ERP`
-- **Git Repository**: Tracks within the parent `Iron-Prairie-Website` Git tree (or can be initialized independently).
-- **Firebase Project**: `iron-prairie-website` (Google Workspace / Firebase Hosting & Firestore).
+- **Git Repository**: Tracks within `https://github.com/alicia835/iron-prairie-website` (Owner: `alicia835`, Authorized Contributor: `Michaelh-UDCS`).
+- **Firebase Project**: `iron-prairie-website` (Owner: `alicia@ironprairiefabrication.com`, Authorized Editor: `michael@universal-dynamic.com`).
 
 ### Git & Push Instructions:
-When working inside this new workspace or from the parent directory:
+When working inside this workspace or from the parent directory:
 ```bash
 cd C:\Users\micha\Desktop\Iron-Prairie-Website
 git add .
 git commit -m "feat(erp): Update IPG Custom ERP System"
-git push origin main
+git push origin master
 ```
 
 ---

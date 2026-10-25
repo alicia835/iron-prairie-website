@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
+import { bootstrapConversionTracking } from './services/analytics';
 import './index.css';
+
+// Conversion listeners immediately (tel / mailto / lead forms). gtag.js stays deferred below.
+bootstrapConversionTracking();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 );
 
-// Zero-Hydration GA4 Island: loaded strictly upon user interaction or long fallback
+// Zero-Hydration GA4 Island: third-party gtag.js loads on interaction or long fallback
 if (typeof window !== 'undefined') {
   let analyticsLoaded = false;
   const launchAnalytics = () => {

@@ -137,7 +137,12 @@ export const BulkListRfqModal: React.FC<BulkListRfqModalProps> = ({
             </div>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4 text-xs font-sans">
+          <form
+            id="bulk-rfq-form"
+            data-ga-lead-form="bulk_rfq"
+            onSubmit={handleSubmit}
+            className="space-y-4 text-xs font-sans"
+          >
             
             {/* Value Proposition Box */}
             <div className="bg-sky-50 border border-sky-200 rounded-xl p-3.5 flex items-center justify-between text-xs">

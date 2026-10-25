@@ -44,6 +44,8 @@ export default function Contact() {
     }
 
     try {
+      // Mark before richer event so the delegated submit listener does not double-fire
+      form.dataset.gaLeadSent = '1';
       trackCustomQuoteSubmission(projectType, organization);
     } catch (err) {
       console.warn('[Contact] Error dispatching quote analytics:', err);
@@ -92,6 +94,9 @@ export default function Contact() {
           </div>
         ) : (
           <form
+            id="contact-quote-form"
+            data-ga-lead-form="quote_request"
+            data-ga-lead-manual="1"
             className="mt-6 space-y-4"
             onSubmit={handleSubmit}
           >

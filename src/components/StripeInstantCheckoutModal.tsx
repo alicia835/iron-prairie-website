@@ -125,6 +125,11 @@ export const StripeInstantCheckoutModal: React.FC<StripeInstantCheckoutModalProp
       // 1. Save lead to Firestore (analytics + follow-up safety net)
       await saveLeadToFirestore(orderRefId);
 
+      // 1b. Dispatch GA4 begin_checkout event
+      import('../services/analytics').then(({ trackBeginCheckout }) => {
+        trackBeginCheckout(cartItems, finalTotalAmount);
+      }).catch(() => {});
+
       // 2. Initiate Stripe Checkout (creates session → browser redirects to Stripe hosted page)
       const result = await initiateStripeCheckout({
         cartItems,

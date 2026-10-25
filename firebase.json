@@ -8,6 +8,23 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "source": "/go/apple",
+        "destination": "/?utm_source=apple_maps&utm_medium=organic&utm_campaign=apple_business_connect",
+        "type": 302
+      },
+      {
+        "source": "/go/gbp",
+        "destination": "/?utm_source=gbp&utm_medium=organic&utm_campaign=google_maps",
+        "type": 302
+      },
+      {
+        "source": "/go/bing",
+        "destination": "/?utm_source=bing_places&utm_medium=organic",
+        "type": 302
+      }
+    ],
     "rewrites": [
       {
         "source": "/api/create-checkout-session",
@@ -72,7 +89,7 @@
           },
           {
             "key": "Content-Security-Policy",
-            "value": "default-src 'self'; script-src 'self' 'sha256-L4Q0Xzc9/DHDbaTbOWgagIU+Fml8VyO1ehn03D0pE98=' 'sha256-V1CSxY/c9Q/1oaflmDhuKLc9JnH72bGD+CvKPc4YZWg=' 'sha256-YXBofHs0/LkzL6z1Uygk5VFpo3YSktf66o4HSRvW7hI=' 'sha256-b/suMLgGUv0pDi8tf3X1LE594+E3wCjS9r+90a2IVVM=' 'sha256-hjbyXVePLBY7NzLlumhHiJQJ69p8I2RdXGN4EebE4vo=' 'sha256-lH5zSbScW04my/5KnPXeGQPvUl0nYXZqSGga86sJS/Y=' 'sha256-sRiS3ye8HIORiNKM2WU2FJBmNaluoBKNVkEeCfiWqzs=' 'sha256-saqvs5FkuDM/6eKDj/CGtg167qeaYLcuORKICFk6M80=' 'sha256-stqoUsixMnradvTUYevY+7yj5yYFTV9MG+0xg+n21gA=' 'sha256-u/ebuv0CBcE+UrYIMZQBysphSMYzNcd+WHXDh7l6VC0=' 'sha256-wZAt2OM0YTyVNRwpiPCFXEN0pPJZ3LZ4Xs4qxG7ukgA=' 'sha256-yNAaGu0iXyGZFZFV273uc/wmgct928SbLS7N8Szg7JU=' https://js.stripe.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://*.firebaseio.com https://*.googleapis.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://api.stripe.com https://*.googleapis.com https://*.firebaseio.com https://*.cloudfunctions.net https://api.indexnow.org https://www.google.com https://www.gstatic.com https://content-firebaseappcheck.googleapis.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://checkout.stripe.com https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://checkout.stripe.com; object-src 'none'; report-to csp-endpoint; report-uri https://ironprairiefabrication.com/api/csp-report"
+            "value": "default-src 'self'; script-src 'self' 'sha256-1fEdfxLlhIWYq7f6V7tqe2q0McXVl4FsTgALtjM3qJg=' 'sha256-8DUdrUx55BX5quj1P4xl8zh44U8L+oX3ZfMyvDeKVw0=' 'sha256-8kzBiQCsgIeJtNZNSajDgv2iBBBkF0nTPPVVuSs11Js=' 'sha256-LvgZbsBFsr5VGoG/oSBhcVLfLWsaI2X4Xc8LFVGJlxQ=' 'sha256-Qpgh3sV9Bm1OqwuKeFY1Z0o6+Z0TgWvVJE2b7YmronU=' 'sha256-VWB9CKGqhZ/w/TOGl8O+2Fu3o6etH8jh0nDTWPm+u7A=' 'sha256-Z5GpHX3zlwiUSx5RkBUXEd3MmlOoRviEj+w1jONaC7U=' 'sha256-dG4bJPfOqhqnRNmGbgT1nHw01FlvZMqFZXDU1qCjmlg=' 'sha256-dntU7WHyRozqaAJJGdDKbAdxjOESzYPxoARfcoDYmmc=' 'sha256-nY/tYZcbiyhluV91oOMs+WnMFFgmttXudqnbBIcKyg8=' 'sha256-oekQxA2Jv1zoh1ZrSwmO8zj/aZoiKT3hVBt2vruE5Uo=' 'sha256-u/ebuv0CBcE+UrYIMZQBysphSMYzNcd+WHXDh7l6VC0=' 'sha256-y0xE+uP75O7Xf8K3e17FFH0M08Qze1iAPXWvkorLPpE=' https://js.stripe.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://*.firebaseio.com https://*.googleapis.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https: https://*.google-analytics.com https://analytics.google.com https://google-analytics.com https://*.googletagmanager.com https://www.google.com https://google.com; connect-src 'self' https://api.stripe.com https://*.googleapis.com https://*.firebaseio.com https://*.cloudfunctions.net https://api.indexnow.org https://www.google.com https://google.com https://www.gstatic.com https://content-firebaseappcheck.googleapis.com https://*.google-analytics.com https://analytics.google.com https://google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://checkout.stripe.com https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://checkout.stripe.com; object-src 'none'; report-to csp-endpoint; report-uri https://ironprairiefabrication.com/api/csp-report"
           }
         ]
       },

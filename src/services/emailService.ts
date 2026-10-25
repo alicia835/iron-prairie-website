@@ -290,6 +290,17 @@ export function generateOrderEmailHtml(order: any): string {
           </div>
         </div>
 
+        <!-- 5-Star Google Review Flywheel for Industrial & Plant Work -->
+        <div style="margin:20px 24px; padding:20px; background:#f0f9ff; border:2px dashed #0284c7; border-radius:12px; text-align:center;">
+          <div style="font-size:15px; font-weight:800; color:#0f172a; margin-bottom:6px;">Help Local Texas Plants &amp; Contractors Find Us! ⭐⭐⭐⭐⭐</div>
+          <div style="font-size:12px; color:#475569; line-height:1.5; max-width:520px; margin:0 auto 12px auto;">
+            How was your experience with Iron Prairie? Leaving an authentic 5-star Google review mentioning your <strong>custom metal fabrication, structural steel welding, or CNC plate cutting</strong> project helps local petrochemical plants, refineries, and contractors discover our Bay City facility!
+          </div>
+          <a href="${siteConfig.googleReviewUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-block; background:#0284c7; color:#ffffff; font-weight:bold; font-size:13px; text-decoration:none; padding:10px 22px; border-radius:6px;">
+            Leave a 5-Star Review on Google &rarr;
+          </a>
+        </div>
+
         <!-- Footer -->
         <div style="background:#0f172a; padding:16px 24px; color:#94a3b8; font-size:11px; text-align:center;">
           Iron Prairie Fabrication Group LLC &bull; <a href="${IPG_MAPS_URL}" target="_blank" rel="noopener noreferrer" style="color:#94a3b8; text-decoration:underline;">${IPG_ADDRESS}</a> &bull; 979-248-9266 &bull; ${IPG_SALES_EMAIL}

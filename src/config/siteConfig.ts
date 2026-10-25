@@ -22,21 +22,36 @@ export const siteConfig = {
   latitude: 28.9227707,
   longitude: -95.8318058,
   googleCid: '12180860875323553231',
+  googlePlaceId: 'ChIJG-Y0cQG3QYYRz7WBLk0dC6k',
+  googleReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJG-Y0cQG3QYYRz7WBLk0dC6k',
   googleKgMid: '/g/11ys96k9kl',
   googleMapsUrl: 'https://www.google.com/maps?cid=12180860875323553231',
   googleMapsShortUrl: 'https://maps.app.goo.gl/ipFsC9qtHyKwZZS39',
   serviceAreas: [
     'Bay City',
-    'Matagorda County',
-    'Freeport',
     'Lake Jackson',
     'Angleton',
-    'Houston',
-    'Baytown',
+    'Freeport',
+    'Clute',
+    'Sweeny',
+    'West Columbia',
+    'Brazoria',
+    'Wharton',
+    'El Campo',
+    'Palacios',
+    'Port Lavaca',
+    'Rosenberg',
+    'Richmond',
+    'Sugar Land',
     'Pearland',
+    'Alvin',
     'Pasadena',
-    'Corpus Christi',
+    'Baytown',
+    'Houston',
+    'Matagorda County',
     'Brazoria County',
+    'Wharton County',
+    'Fort Bend County',
     'Texas Gulf Coast',
     'Statewide Texas',
     'All 50 States (Nationwide)'
@@ -50,14 +65,30 @@ export const siteConfig = {
   domain: 'https://ironprairiefabrication.com',
   stagingDomain: 'https://iron-prairie-website.web.app',
 
+  // Cloud & Code Infrastructure Governance (Method B Architecture)
+  // Sole Owner: Alicia (alicia@ironprairiefabrication.com / GitHub: alicia835)
+  // Authorized Contributor & Technical Operations: UDCS (michael@universal-dynamic.com / GitHub: Michaelh-UDCS)
+  infrastructure: {
+    firebaseProjectId: 'iron-prairie-website',
+    firebaseOwner: 'alicia@ironprairiefabrication.com',
+    firebaseAuthorizedEditor: 'michael@universal-dynamic.com',
+    githubRepo: 'https://github.com/alicia835/iron-prairie-website',
+    githubOwner: 'alicia835',
+    githubAuthorizedContributor: 'Michaelh-UDCS'
+  },
+
   // Google Ecosystem & GA4 Analytics Single Source of Truth
   ga4MeasurementId: (import.meta.env.VITE_GA4_MEASUREMENT_ID || 'G-39362MRM5F') as string,
 
   // Multi-Platform Attribution Standard (GBP / Apple Maps / Bing Places)
+  // Apple Business Connect rejects UTM query strings ("Enter a web address without marketing parameters").
+  // Use clean /go/* paths (Firebase Hosting 302 → UTM homepage) for Apple; GBP/Bing may use UTMs or /go/*.
   attributionUrls: {
     gbp: 'https://ironprairiefabrication.com/?utm_source=gbp&utm_medium=organic&utm_campaign=google_maps',
-    appleBusinessConnect: 'https://ironprairiefabrication.com/?utm_source=apple_maps&utm_medium=organic&utm_campaign=apple_business_connect',
-    bingPlaces: 'https://ironprairiefabrication.com/?utm_source=bing_places&utm_medium=organic'
+    gbpPath: 'https://ironprairiefabrication.com/go/gbp',
+    appleBusinessConnect: 'https://ironprairiefabrication.com/go/apple',
+    bingPlaces: 'https://ironprairiefabrication.com/?utm_source=bing_places&utm_medium=organic',
+    bingPath: 'https://ironprairiefabrication.com/go/bing'
   },
 
   // Big 3 Off-Page Identity Status: Google Claimed (CID 12180860875323553231); Apple In Review (Location ID 1545151277392992454, Org 996979639062); Bing In Progress (BizID c8b0d161-6b1a-4888-bbdc-f3e441146c56)
@@ -79,24 +110,29 @@ export const siteConfig = {
 
   services: [
     {
-      title: 'Custom Metal Fabrication & Structural Steel',
-      desc: 'Architectural ranch gates, boundary steel, structural welding, equipment skids, and custom part fabrication.',
+      title: 'Structural Steel Fabrication & Certified Welding',
+      desc: 'Heavy structural steel framing, industrial equipment skids, certified pipe welding, mezzanine platforms, and structural supports for chemical plants, refineries, and commercial contractors.',
+      slug: 'services'
+    },
+    {
+      title: 'Custom Metal Fabrication & Plant Maintenance',
+      desc: 'Rapid-turnaround industrial fabrication, custom brackets, hoppers, replacement parts, aluminum welding, and custom assemblies for local Texas plants and industrial facilities.',
       slug: 'services'
     },
     {
       title: 'High-Definition CNC Plasma Plate Cutting',
-      desc: 'Precision plate cutting from gauge sheet up to heavy structural plate in carbon, stainless, and aluminum.',
-      slug: 'services'
-    },
-    {
-      title: 'Agriculture & Livestock Equipment',
-      desc: 'Custom pens, squeeze chutes, modular hog traps, cattle guards, and hard-use ranch equipment.',
+      desc: 'Precision plate cutting from gauge sheet up to heavy structural steel plate in carbon (SA-516-70), stainless (304L/316L), and aluminum with tight industrial tolerances.',
       slug: 'services'
     },
     {
       title: 'ASME B16.48 Paddle Blinds & Spacers',
-      desc: 'Positive isolation paddle blinds and spacer rings with certified MTRs, hot-shot turnaround, and nationwide shipping.',
+      desc: 'Positive isolation paddle blinds and spacer rings with certified EN 10204 3.1 MTRs, 2-4 hr Texas hot-shot plant turnaround delivery, and daily nationwide shipping.',
       slug: 'paddle-blinds'
+    },
+    {
+      title: 'Custom Ranch Entrance Gates & Boundary Steel',
+      desc: 'Heavy architectural ranch entrance gates, cattle guards, modular livestock handling equipment, feral hog traps, and boundary steel builds.',
+      slug: 'services'
     },
     {
       title: 'Custom Tornado Shelters & Underground Bunkers',

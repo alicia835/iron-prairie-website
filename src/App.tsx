@@ -891,6 +891,9 @@ export default function App() {
           setOrders(prev => [restoredOrder, ...prev]);
           setConfirmedOrder(restoredOrder);
           dispatchOrderEmail(restoredOrder);
+          import('./services/analytics').then(({ trackPurchase }) => {
+            trackPurchase(restoredOrder);
+          }).catch(() => {});
           localStorage.removeItem('ipf_pending_stripe_order');
         }
       } catch (err) {
@@ -1620,6 +1623,9 @@ export default function App() {
 
     setCart(prev => [...prev, ...converted]);
     setIsCartOpen(true);
+    import('./services/analytics').then(({ trackAddToCart }) => {
+      trackAddToCart(converted);
+    }).catch(() => {});
   };
 
   // Open Instant Proposal Modal for arbitrary items (single or batch)
@@ -1807,6 +1813,9 @@ export default function App() {
         setIsCheckoutOpen(false);
         setIsHotShotOrder(false);
         setConfirmedOrder(newOrder);
+        import('./services/analytics').then(({ trackPurchase }) => {
+          trackPurchase(newOrder);
+        }).catch(() => {});
         setNotificationToast({
           type: 'email',
           message: `✉️ Sandbox order #${newOrder.poNumber} queued (Stripe keys not configured).`,
@@ -2310,6 +2319,10 @@ export default function App() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="border-t border-brand-border/60 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-2">
+            <p>&copy; 2026 Iron Prairie Fabrication Group LLC. All rights reserved.</p>
+            <p className="font-mono text-stone-400 text-center sm:text-right">Bay City &bull; Lake Jackson &bull; Freeport &bull; Houston &bull; Texas Gulf Coast</p>
           </div>
         </div>
       </footer>
@@ -3237,6 +3250,26 @@ export default function App() {
                 <span>Grand Invoiced Total:</span>
                 <span className="text-sky-800 text-base">${confirmedOrder.totalAmount.toFixed(2)}</span>
               </div>
+            </div>
+
+            {/* 5-Star Google Review Flywheel for Industrial & Plant Work */}
+            <div className="bg-sky-50 border border-sky-200 rounded-2xl p-4 text-center space-y-2 order-receipt-no-print">
+              <div className="flex items-center justify-center gap-1 text-amber-500 font-bold text-sm">
+                <span>⭐⭐⭐⭐⭐</span>
+                <span className="text-slate-900 font-extrabold ml-1">Help Local Texas Plants &amp; Contractors Find Us!</span>
+              </div>
+              <p className="text-xs text-slate-600 max-w-md mx-auto">
+                Leaving a quick Google review mentioning your <strong>custom metal fabrication, structural welding, or CNC plate cutting</strong> project helps local chemical plants, refineries, and industrial contractors discover our Bay City shop!
+              </p>
+              <a
+                href={siteConfig.googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-sky-700 hover:bg-sky-800 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all shadow-sm"
+              >
+                <span>Write 5-Star Google Review</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </a>
             </div>
 
             {/* Actions */}

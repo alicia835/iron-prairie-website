@@ -121,8 +121,8 @@ const routes = [
   },
   {
     path: '/services',
-    title: 'Custom Metal Fabrication Services Bay City & Houston TX | Iron Prairie',
-    description: 'Full-service custom metal fabrication shop: structural steel fabrication, CNC plasma cutting, ranch gates, livestock pens, ASME paddle blinds & custom shelters.',
+    title: 'Custom Metal Fabrication & Structural Welding Bay City TX | Iron Prairie',
+    description: 'Custom metal fabrication, structural steel fabrication & certified welding shop. Heavy equipment skids, CNC plasma cutting, plant maintenance & ASME paddle blinds.',
     canonical: `${DOMAIN}/services`,
     breadcrumbs: [
       { name: 'Home', url: `${DOMAIN}/` },
@@ -132,6 +132,46 @@ const routes = [
       "@type": "OfferCatalog",
       "name": "Custom Metal Fabrication & Industrial Manufacturing Services",
       "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Structural Steel Fabrication & Certified Welding",
+            "description": "Heavy structural steel fabrication, certified welding, equipment skids, industrial pipe welding, mezzanine platforms, and structural supports for chemical plants, refineries, and contractors."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Metal Fabrication & Plant Maintenance",
+            "description": "Rapid-turnaround industrial fabrication, custom brackets, chutes, hoppers, replacement components, aluminum & stainless welding for Texas plants and commercial operations."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "High-Definition CNC Plasma Plate Cutting",
+            "description": "High-definition CNC plasma cutting for SA-516-70 carbon steel, stainless steel (304/316), and aluminum plate. Precision gussets, baseplates, flanges, and custom plate parts."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "ASME B16.48 Paddle Blinds & Spacers",
+            "description": "Positive isolation paddle blinds, figure-8 spectacle blinds, and spacer rings (150# to 2500#, 1/2\" to 24\"+ NPS) with certified EN 10204 3.1 MTRs and 2-4 hr Texas plant hot-shot delivery."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Part Fabrication & Prototyping",
+            "description": "One-off parts, short-run manufacturing, OEM replacement parts, aluminum welding, brackets, and custom assemblies for local industrial facilities and contractors."
+          }
+        },
         {
           "@type": "Offer",
           "itemOffered": {
@@ -152,40 +192,8 @@ const routes = [
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "High-Definition CNC Plasma Plate Cutting",
-            "description": "High-definition CNC plasma cutting for mild steel, SA-516-70 carbon steel, stainless steel, and aluminum plate. Precision gussets, baseplates, flanges, and custom parts."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Structural Steel Fabrication & Welding",
-            "description": "Commercial and industrial structural steel fabrication, certified welding, structural skids, pipe welding, mezzanine steel, and equipment supports."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "ASME B16.48 Paddle Blinds & Spacers",
-            "description": "Positive isolation paddle blinds, figure-8 spectacle blinds, and spacer rings (150# to 2500#, 1/2\" to 24\"+ NPS) with certified EN 10204 3.1 MTRs and daily nationwide shipping."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
             "name": "Custom Tornado Shelters & Underground Bunkers",
             "description": "Engineered steel tornado shelters, storm safety rooms, underground survival bunkers, and large built-in heavy security safes fabricated to project specifications."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom Part Fabrication & Prototyping",
-            "description": "One-off parts, short-run manufacturing, OEM replacement parts, aluminum welding, brackets, and custom sheet metal for local shops and industrial clients."
           }
         },
         {
@@ -276,7 +284,30 @@ const routes = [
     breadcrumbs: [
       { name: 'Home', url: `${DOMAIN}/` },
       { name: 'B2B Storefront', url: `${DOMAIN}/storefront` }
-    ]
+    ],
+    extraSchema: {
+      "@type": "Product",
+      "name": "ASME B16.48 Paddle Blinds & Spectacle Blinds",
+      "image": OG_IMAGE,
+      "description": "Industrial ASME B16.48 line blinds, paddle blinds, figure-8 spectacle blinds, and spacer rings in SA-516-70 carbon steel, 304/304L, and 316/316L stainless steel with certified EN 10204 3.1 MTRs and serialized heat numbers.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Iron Prairie"
+      },
+      "category": "Industrial Pipe Fittings > Positive Isolation Blinds",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "45.00",
+        "highPrice": "2850.00",
+        "offerCount": "120",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@id": `${DOMAIN}/#organization`
+        }
+      }
+    }
   },
   {
     path: '/paddle-blinds',
@@ -286,7 +317,30 @@ const routes = [
     breadcrumbs: [
       { name: 'Home', url: `${DOMAIN}/` },
       { name: 'Paddle Blinds', url: `${DOMAIN}/paddle-blinds` }
-    ]
+    ],
+    extraSchema: {
+      "@type": "Product",
+      "name": "ASME B16.48 Paddle Blinds & Positive Isolation Spacers",
+      "image": OG_IMAGE,
+      "description": "Engineered ASME B16.48 paddle blinds (150#, 300#, 600#, 900#, 1500#, 2500#) for refinery turnarounds, chemical plant isolation, and pipeline maintenance. Certified mill test reports (MTRs) provided with every order.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Iron Prairie"
+      },
+      "category": "Industrial Pipe Fittings > Isolation Blinds",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "45.00",
+        "highPrice": "2850.00",
+        "offerCount": "120",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@id": `${DOMAIN}/#organization`
+        }
+      }
+    }
   },
   {
     path: '/404',
@@ -355,16 +409,29 @@ function buildJsonLd(route) {
       ],
       "areaServed": [
         { "@type": "City", "name": "Bay City", "sameAs": "https://en.wikipedia.org/wiki/Bay_City,_Texas" },
-        { "@type": "AdministrativeArea", "name": "Matagorda County", "sameAs": "https://en.wikipedia.org/wiki/Matagorda_County,_Texas" },
-        { "@type": "City", "name": "Freeport", "sameAs": "https://en.wikipedia.org/wiki/Freeport,_Texas" },
         { "@type": "City", "name": "Lake Jackson", "sameAs": "https://en.wikipedia.org/wiki/Lake_Jackson,_Texas" },
         { "@type": "City", "name": "Angleton", "sameAs": "https://en.wikipedia.org/wiki/Angleton,_Texas" },
-        { "@type": "City", "name": "Houston", "sameAs": "https://en.wikipedia.org/wiki/Houston" },
-        { "@type": "City", "name": "Baytown", "sameAs": "https://en.wikipedia.org/wiki/Baytown,_Texas" },
+        { "@type": "City", "name": "Freeport", "sameAs": "https://en.wikipedia.org/wiki/Freeport,_Texas" },
+        { "@type": "City", "name": "Clute", "sameAs": "https://en.wikipedia.org/wiki/Clute,_Texas" },
+        { "@type": "City", "name": "Sweeny", "sameAs": "https://en.wikipedia.org/wiki/Sweeny,_Texas" },
+        { "@type": "City", "name": "West Columbia", "sameAs": "https://en.wikipedia.org/wiki/West_Columbia,_Texas" },
+        { "@type": "City", "name": "Brazoria", "sameAs": "https://en.wikipedia.org/wiki/Brazoria,_Texas" },
+        { "@type": "City", "name": "Wharton", "sameAs": "https://en.wikipedia.org/wiki/Wharton,_Texas" },
+        { "@type": "City", "name": "El Campo", "sameAs": "https://en.wikipedia.org/wiki/El_Campo,_Texas" },
+        { "@type": "City", "name": "Palacios", "sameAs": "https://en.wikipedia.org/wiki/Palacios,_Texas" },
+        { "@type": "City", "name": "Port Lavaca", "sameAs": "https://en.wikipedia.org/wiki/Port_Lavaca,_Texas" },
+        { "@type": "City", "name": "Rosenberg", "sameAs": "https://en.wikipedia.org/wiki/Rosenberg,_Texas" },
+        { "@type": "City", "name": "Richmond", "sameAs": "https://en.wikipedia.org/wiki/Richmond,_Texas" },
+        { "@type": "City", "name": "Sugar Land", "sameAs": "https://en.wikipedia.org/wiki/Sugar_Land,_Texas" },
         { "@type": "City", "name": "Pearland", "sameAs": "https://en.wikipedia.org/wiki/Pearland,_Texas" },
+        { "@type": "City", "name": "Alvin", "sameAs": "https://en.wikipedia.org/wiki/Alvin,_Texas" },
         { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_Texas" },
-        { "@type": "City", "name": "Corpus Christi", "sameAs": "https://en.wikipedia.org/wiki/Corpus_Christi,_Texas" },
+        { "@type": "City", "name": "Baytown", "sameAs": "https://en.wikipedia.org/wiki/Baytown,_Texas" },
+        { "@type": "City", "name": "Houston", "sameAs": "https://en.wikipedia.org/wiki/Houston" },
+        { "@type": "AdministrativeArea", "name": "Matagorda County", "sameAs": "https://en.wikipedia.org/wiki/Matagorda_County,_Texas" },
         { "@type": "AdministrativeArea", "name": "Brazoria County", "sameAs": "https://en.wikipedia.org/wiki/Brazoria_County,_Texas" },
+        { "@type": "AdministrativeArea", "name": "Wharton County", "sameAs": "https://en.wikipedia.org/wiki/Wharton_County,_Texas" },
+        { "@type": "AdministrativeArea", "name": "Fort Bend County", "sameAs": "https://en.wikipedia.org/wiki/Fort_Bend_County,_Texas" },
         { "@type": "AdministrativeArea", "name": "Texas Gulf Coast" },
         { "@type": "State", "name": "Texas", "sameAs": "https://en.wikipedia.org/wiki/Texas" },
         { "@type": "Country", "name": "United States", "sameAs": "https://en.wikipedia.org/wiki/United_States" }
@@ -373,6 +440,81 @@ function buildJsonLd(route) {
         "@type": "OfferCatalog",
         "name": "Custom Metal Fabrication & Industrial Manufacturing Services",
         "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Structural Steel Fabrication & Certified Welding",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural Steel Fabrication & Certified Welding",
+                  "description": "Heavy structural steel fabrication, certified welding, equipment skids, industrial pipe welding, mezzanine platforms, and structural supports for chemical plants, refineries, and contractors.",
+                  "provider": { "@id": `${DOMAIN}/#organization` }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Custom Metal Fabrication & Plant Maintenance",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom Metal Fabrication & Plant Maintenance",
+                  "description": "Rapid-turnaround industrial fabrication, custom brackets, chutes, hoppers, replacement components, aluminum & stainless welding for Texas plants and commercial operations.",
+                  "provider": { "@id": `${DOMAIN}/#organization` }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "ASME B16.48 Paddle Blinds & Spacers",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "ASME B16.48 Paddle Blinds & Spacers",
+                  "description": "Positive isolation paddle blinds, figure-8 spectacle blinds, and spacer rings (150# to 2500#, 1/2\" to 24\"+ NPS) with certified EN 10204 3.1 MTRs and daily nationwide shipping.",
+                  "provider": { "@id": `${DOMAIN}/#organization` }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "High-Definition CNC Plasma Plate Cutting",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "High-Definition CNC Plasma Plate Cutting",
+                  "description": "High-definition CNC plasma cutting for mild steel, SA-516-70 carbon steel, stainless steel, and aluminum plate. Precision gussets, baseplates, flanges, and custom parts.",
+                  "provider": { "@id": `${DOMAIN}/#organization` }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Custom Part Fabrication & Prototyping",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom Part Fabrication & Prototyping",
+                  "description": "One-off parts, short-run manufacturing, OEM replacement parts, aluminum welding, brackets, and custom sheet metal for local shops and industrial clients.",
+                  "provider": { "@id": `${DOMAIN}/#organization` }
+                }
+              }
+            ]
+          },
           {
             "@type": "OfferCatalog",
             "name": "Custom Ranch Entrance Gates & Boundary Steel",
@@ -405,51 +547,6 @@ function buildJsonLd(route) {
           },
           {
             "@type": "OfferCatalog",
-            "name": "High-Definition CNC Plasma Plate Cutting",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "High-Definition CNC Plasma Plate Cutting",
-                  "description": "High-definition CNC plasma cutting for mild steel, SA-516-70 carbon steel, stainless steel, and aluminum plate. Precision gussets, baseplates, flanges, and custom parts.",
-                  "provider": { "@id": `${DOMAIN}/#organization` }
-                }
-              }
-            ]
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Structural Steel Fabrication & Welding",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Structural Steel Fabrication & Welding",
-                  "description": "Commercial and industrial structural steel fabrication, certified welding, structural skids, pipe welding, mezzanine steel, and equipment supports.",
-                  "provider": { "@id": `${DOMAIN}/#organization` }
-                }
-              }
-            ]
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "ASME B16.48 Paddle Blinds & Spacers",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "ASME B16.48 Paddle Blinds & Spacers",
-                  "description": "Positive isolation paddle blinds, figure-8 spectacle blinds, and spacer rings (150# to 2500#, 1/2\" to 24\"+ NPS) with certified EN 10204 3.1 MTRs and daily nationwide shipping.",
-                  "provider": { "@id": `${DOMAIN}/#organization` }
-                }
-              }
-            ]
-          },
-          {
-            "@type": "OfferCatalog",
             "name": "Custom Tornado Shelters & Underground Bunkers",
             "itemListElement": [
               {
@@ -458,21 +555,6 @@ function buildJsonLd(route) {
                   "@type": "Service",
                   "name": "Custom Tornado Shelters & Underground Bunkers",
                   "description": "Engineered steel tornado shelters, storm safety rooms, underground survival bunkers, and large built-in heavy security safes fabricated to project specifications.",
-                  "provider": { "@id": `${DOMAIN}/#organization` }
-                }
-              }
-            ]
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Custom Part Fabrication & Prototyping",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Custom Part Fabrication & Prototyping",
-                  "description": "One-off parts, short-run manufacturing, OEM replacement parts, aluminum welding, brackets, and custom sheet metal for local shops and industrial clients.",
                   "provider": { "@id": `${DOMAIN}/#organization` }
                 }
               }
@@ -510,19 +592,22 @@ function buildJsonLd(route) {
       "knowsAbout": [
         "Custom Metal Fabrication",
         "Structural Steel Fabrication",
+        "Certified Industrial Welding",
+        "Plant Maintenance & Turnaround Fabrication",
+        "Pipe Spool & Structural Skid Fabrication",
         "Custom Part Fabrication",
         "Fabrication Company Near Me",
         "Local Fabrication Shops",
         "Metal Fabrication Companies",
         "High-Definition CNC Plasma Plate Cutting",
         "ASME B16.48 Paddle Blinds & Spacers",
+        "Petrochemical Refinery Turnaround Blinds",
         "Custom Ranch Entrance Gates & Boundary Steel",
         "Agriculture & Livestock Equipment (Pens, Chutes, Traps)",
         "Custom Tornado Shelters & Underground Bunkers",
         "Industrial Welding",
         "Pipe Fabrication",
         "Aluminum Welding",
-        "Petrochemical Refinery Turnaround Blinds",
         "Nationwide Freight Logistics",
         "Government Contracting (SAM.gov Registered, UEI: XX7XCMGN9XD5)"
       ]
@@ -642,8 +727,9 @@ function buildStaticBody(route) {
       <div class="prerender-footer" role="contentinfo" style="margin-top:3rem;padding:1.5rem 0;border-top:1px solid #e2e8f0;font-size:0.85rem;color:#64748b;line-height:1.6;">
         <p><strong>Iron Prairie Fabrication Group LLC</strong> &bull; 200 County Rd 170, Bay City, TX 77414 (Matagorda County)</p>
         <p>Direct Inquiries: <a href="tel:(979)248-9266" data-ga-location="prerender_static_footer_phone" style="color:#0f172a;font-weight:700;">(979) 248-9266</a> | Email: <a href="mailto:Sales@ironprairiefabrication.com" style="color:#0f172a;">Sales@ironprairiefabrication.com</a></p>
-        <p>Serving Bay City, Matagorda County, Brazoria County, Freeport, Lake Jackson, Angleton, Houston, Baytown, Pasadena, Corpus Christi, Texas statewide, and nationwide freight shipping across all 50 US states.</p>
+        <p>Serving Bay City, Lake Jackson, Angleton, Freeport, Clute, Sweeny, West Columbia, Brazoria, Wharton, El Campo, Palacios, Port Lavaca, Rosenberg, Richmond, Sugar Land, Pearland, Alvin, Pasadena, Baytown, Houston, Matagorda County, Brazoria County, Texas statewide, and nationwide freight shipping across all 50 US states.</p>
         <p>Certified Woman-Owned Business &bull; SAM.gov Unique Entity ID (UEI): <strong>XX7XCMGN9XD5</strong></p>
+        <p style="margin-top:1rem;padding-top:0.75rem;border-top:1px dashed #cbd5e1;color:#475569;">&copy; 2026 Iron Prairie Fabrication Group LLC. All rights reserved.</p>
       </div>
     </main>
   `;

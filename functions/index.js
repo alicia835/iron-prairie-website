@@ -194,6 +194,15 @@ function buildOrderReceiptHtml(order) {
           </table>
         </div>
       </div>
+      <div style="margin:20px 24px 24px 24px;padding:20px;background:#f0f9ff;border:2px dashed #0284c7;border-radius:12px;text-align:center;">
+        <div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:6px;">Help Local Texas Plants &amp; Contractors Find Us! ⭐⭐⭐⭐⭐</div>
+        <div style="font-size:12px;color:#475569;line-height:1.5;max-width:520px;margin:0 auto 12px auto;">
+          How was your experience with Iron Prairie? Leaving an authentic 5-star Google review mentioning your <strong>custom metal fabrication, structural welding, or CNC plate cutting</strong> project helps local petrochemical plants, refineries, and industrial contractors discover our Bay City shop!
+        </div>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJG-Y0cQG3QYYRz7WBLk0dC6k" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#0284c7;color:#ffffff;font-size:13px;font-weight:700;padding:10px 22px;border-radius:6px;text-decoration:none;">
+          Leave a 5-Star Review on Google &rarr;
+        </a>
+      </div>
       <div class="section-pad" style="background:#0f172a;padding:16px 24px;color:#94a3b8;font-size:11px;text-align:center;line-height:1.5;">
         Iron Prairie Fabrication Group LLC • <a href="https://maps.app.goo.gl/ipFsC9qtHyKwZZS39" target="_blank" rel="noopener noreferrer" style="color:#94a3b8;text-decoration:underline;">200 County Rd 170, Bay City, TX 77414</a> • 979-248-9266 • ${SALES_EMAIL}
       </div>

@@ -6,12 +6,12 @@ This document provides exact paths and credentials reference to ensure full sync
 | :--- | :--- |
 | **Primary Host Directory** | `C:\Users\micha\Desktop\Iron-Prairie-Website` |
 | **Custom ERP Subfolder** | `C:\Users\micha\Desktop\Iron-Prairie-Website\IPG-Custom-ERP` |
-| **Firebase Project ID** | `iron-prairie-website` |
-| **Git Remote Origin** | Connected via parent repository `Iron-Prairie-Website` |
+| **Firebase Project ID** | `iron-prairie-website` (Owner: `alicia@ironprairiefabrication.com`, Editor: `michael@universal-dynamic.com`) |
+| **Git Remote Origin** | `https://github.com/alicia835/iron-prairie-website.git` (Owner: `alicia835`, Contributor: `Michaelh-UDCS`) |
 | **Default ERP Port** | `http://localhost:5174` |
 | **Parent Web App Port** | `http://localhost:5173` |
-| **Sales Trigger Email** | `sales@iron-prairie.com` |
-| **Accounting Remittance** | `ap@iron-prairie.com` / `ar@iron-prairie.com` |
+| **Sales Trigger Email** | `Sales@ironprairiefabrication.com` |
+| **Accounting Remittance** | `ap@ironprairiefabrication.com` / `ar@ironprairiefabrication.com` |
 
 ---
 
@@ -21,5 +21,5 @@ From within this folder or the parent:
 Set-Location "C:\Users\micha\Desktop\Iron-Prairie-Website"
 git add .
 git commit -m "feat(erp): Update IPG Custom ERP Workspace"
-git push origin main
+git push origin master
 ```

@@ -11,18 +11,18 @@ Bring Iron Prairie Fabrication Group LLC website scorecards from current post-au
 3. Design / UX
 4. Security (cloud_security_architect)
 
-Repo: `C:\Users\micha\Desktop\Iron-Prairie-Website`  
+Repo: `C:\Users\micha\Desktop\Iron-Prairie-Website` (GitHub: `https://github.com/alicia835/iron-prairie-website`)  
 Live domain: `https://ironprairiefabrication.com`  
-Firebase project: `iron-prairie-website`  
+Firebase project: `iron-prairie-website` (Method B: Alicia Owner, UDCS Authorized Contributor / Editor)  
 Archetype: Mode A Local Service Dominator  
 
 ### Mandatory skills (read before coding)
-- `C:\Users\micha\OneDrive - freeweld.com\Antigravity\skills\ultimate_web_architect\SKILL.md`
-- `C:\Users\micha\OneDrive - freeweld.com\Antigravity\skills\claude_design_10x\SKILL.md`
-- `C:\Users\micha\OneDrive - freeweld.com\Antigravity\skills\master_seo_evaluator\SKILL.md`
-- `C:\Users\micha\OneDrive - freeweld.com\Antigravity\skills\local_seo_playbook\SKILL.md`
-- `C:\Users\micha\OneDrive - freeweld.com\Antigravity\skills\cloud_security_architect\SKILL.md`
-- `C:\Users\micha\OneDrive - freeweld.com\Antigravity\skills\master_claude_engine\SKILL.md`
+- `C:\IDE-Global-Skill\skills\ultimate_web_architect\SKILL.md`
+- `C:\IDE-Global-Skill\skills\claude_design_10x\SKILL.md`
+- `C:\IDE-Global-Skill\skills\master_seo_evaluator\SKILL.md`
+- `C:\IDE-Global-Skill\skills\local_seo_playbook\SKILL.md`
+- `C:\IDE-Global-Skill\skills\cloud_security_architect\SKILL.md`
+- `C:\IDE-Global-Skill\skills\master_claude_engine\SKILL.md`
 
 Update `MISSION_CONTROL.md` first with this task list, then execute Auto-Run / YOLO.
 

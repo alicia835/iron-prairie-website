@@ -1,8 +1,19 @@
 ## Iron Prairie Website
 
-Local-only marketing site for **Iron Prairie Fabrication Group LLC** – a woman-owned fabrication shop serving schools, municipalities, and refineries in Texas.
+Production marketing, e-commerce storefront, and operations suite for **Iron Prairie Fabrication Group LLC** – a woman-owned custom metal fabrication shop and ASME B16.48 paddle blind manufacturer serving Texas and nationwide.
 
-This project is built with **React**, **Vite**, and **Tailwind CSS** and is designed to run locally in this folder. Firebase (hosting and forms) can be added later once the design is approved.
+- **Live Custom Domain**: [https://ironprairiefabrication.com](https://ironprairiefabrication.com)
+- **Firebase Staging**: [https://iron-prairie-website.web.app](https://iron-prairie-website.web.app)
+- **Operations & MTR Suite**: `/operations`
+
+### Repository & Cloud Infrastructure (Method B Architecture)
+
+- **GitHub Repository**: [alicia835/iron-prairie-website](https://github.com/alicia835/iron-prairie-website)
+- **GitHub Asset Owner**: Alicia (`alicia835`)
+- **Authorized Technical Contributor**: Universal Dynamic Consulting Services LLC (`Michaelh-UDCS` / `michael@universal-dynamic.com`)
+- **Firebase Cloud Project**: `iron-prairie-website` (Project #786531503671)
+- **Firebase Project Owner**: `alicia@ironprairiefabrication.com`
+- **Firebase Authorized Editor**: `michael@universal-dynamic.com` (CLI deploy, functions, and maintenance)
 
 ### Getting Started
 

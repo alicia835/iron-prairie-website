@@ -37,8 +37,10 @@ Never invent GA4 IDs or Maps / Apple / Bing `sameAs` URLs — leave PENDING unti
 - [ ] `npm run lh:check` **100/100/100/100 mobile + desktop** (deploy blocked below 100)
 
 ## Deploy
-
-- [ ] Business Firebase account (`dual_account_orchestrator`)
+ 
+- [x] Client Firebase & GitHub transfer complete (Method B — Alicia Owner, UDCS Authorized Contributor)
+- [x] Business Firebase account (`michael@universal-dynamic.com` as authorized Editor via `dual_account_orchestrator`)
+- [x] Git remote `origin` verified (`https://github.com/alicia835/iron-prairie-website.git` via `Michaelh-UDCS`)
 - [ ] `firebase deploy --only hosting` (client project isolated)
 
 ## Launch handoff (cannot skip)
@@ -50,7 +52,8 @@ Never invent GA4 IDs or Maps / Apple / Bing `sameAs` URLs — leave PENDING unti
 - [ ] **Bing Webmaster** + sitemap + **AI Performance** path noted
 - [ ] **Gate 100** (`gate100_browser_scorecard`): live PSI/LH mobile **and** desktop = **100** each category
 - [ ] Optional: `npm run psi:check` (needs `GOOGLE_PSI_API_KEY`) or pagespeed.web.dev both strategies
-- [ ] **Big 3** (`local_seo_playbook`): GBP · Apple Business · Bing Places
+- [ ] **Big 3** (`local_seo_playbook` + `SEO_CLIENT_CHECKLIST.md`): GBP · Apple Business · Bing Places
+  - Website fields MUST use `siteConfig.attributionUrls` (UTM), not the bare domain
 - [ ] Real profile URLs added to `sameAs` only after claimed
 
 ## Browser / AI surfaces (Module 08)
